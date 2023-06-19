@@ -94,7 +94,7 @@ async function ctaClick() {
       if (result?.data?.data?.thirdPartyCollectPoints?.result === 'Points Successfully Collected') {
         localStorage.setItem('phonenum', formattedPhone)
         localStorage.setItem('previous-collected-point', result?.data?.data?.thirdPartyCollectPoints?.collectedPoints)
-        window.location.href = '/result.html'
+        window.location.href = './result.html'
       } else {
         throw Error()
       }

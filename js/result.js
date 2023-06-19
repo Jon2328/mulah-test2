@@ -27,7 +27,7 @@ async function getInfo() {
 }
 
 function doneClick() {
-  window.location.href = '/index.html'
+  window.location.href = './index.html'
 }
 
 getInfo()
