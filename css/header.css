@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary-color);
+  height: 4rem;
+  position: relative;
+}
+
+.header > .brand-logo {
+  height: 3rem;
+  margin-top: 0.4rem;
+  margin-left: 5rem;
+  margin-right: 2rem;
+}
+
+.header > .store-name {
+  color: white;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.header > .hamburger-icon {
+  height: 3rem;
+  margin-top: 0.5rem;
+  position: absolute;
+  right: 5rem;
+}

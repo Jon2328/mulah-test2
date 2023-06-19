@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #e47d39;
+  --grey: rgba(178,177,177,1);
+  --success-green: #60ca3c;
+}
+
+html {
+  font-size: 16px;
+  overflow: hidden;
+}
+
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+}

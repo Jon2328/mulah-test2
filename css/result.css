@@ -1,0 +1,55 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 4rem);
+  justify-content: center;
+}
+
+.content img {
+  object-fit: contain;
+  height: 40%;
+  margin: 0px auto;
+}
+
+#collected {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0px 0px
+}
+
+#total {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--grey);
+  text-align: center;
+  margin: 0.5rem 0px 0px
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+.button-container button {
+  border: 0px;
+  border-radius: 30px;
+  color: white;
+  padding: 1rem 0rem;
+  min-width: 15rem;
+  font-size: 1.5rem;
+}
+
+.button-container button:hover {
+  transform: scale(1.05);
+}
+
+.redeem-btn {
+  background-color: var(--primary-color);
+}
+
+.done-btn {
+  background-color: var(--success-green);
+}

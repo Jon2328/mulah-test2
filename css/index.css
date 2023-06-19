@@ -1,0 +1,157 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 4rem);
+}
+
+.visual {
+  flex-basis: 50%;
+}
+
+.visual img {
+  width: 85%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left bottom;
+}
+
+.input-container {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: scale(1.2) translateX(-10%);
+}
+
+.country-selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.country-selector label {
+  color: var(--grey);
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.country-selector select {
+  color: var(--primary-color);
+  border: 0px;
+  font-size: 1rem;
+}
+
+.phone-number-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem 0px;
+}
+
+.phone-number-country-prefix {
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  margin-left: 3rem;
+}
+
+.phone-number {
+  font-size: 1.5rem;
+  border: 0px;
+  margin-right: 3rem;
+}
+
+.check-icon {
+  height: 1.75rem;
+}
+
+.check-icon.green {
+  fill: var(--success-green);
+}
+
+.numpad-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  padding: 1rem 0px;
+}
+
+.numpad-item {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #e6e6e6;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3rem;
+}
+
+.numpad-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.numpad-item.clear-all {
+  line-height: 1rem;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.numpad-item.back-space {
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+.cta {
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  border: 0px;
+  min-width: 15rem;
+  padding: 0.5rem 0px;
+  margin: 2rem auto 0px;
+  font-size: 1.25rem;
+}
+
+.cta.disabled {
+  background-color: var(--grey);
+}
+
+.cta:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#error-msg {
+  color: red;
+  margin: 1rem auto 0px;
+  visibility: hidden;
+}
+
+#error-msg.show {
+  visibility: visible;
+}
+
+@media only screen and (min-width: 1200px) {
+  .visual img {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 825px) and (min-height: 1022px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  .visual img {
+    width: 50%;
+    margin: 0% 0px 0px 50%;
+    transform: translateX(-50%);
+  }
+
+
+  .input-container {
+    transform: scale(1.35) translateY(2rem);
+  }
+}
