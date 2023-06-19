@@ -1,7 +1,8 @@
 let phoneNum = ''
+const maxPhoneNum = 9
 
 function numpadClick(val) {
-  if (phoneNum.length < 10) {
+  if (phoneNum.length <= maxPhoneNum) {
     switch (Number(val)) {
       case 1: {
         phoneNum += 1
@@ -59,7 +60,7 @@ function numpadClick(val) {
   }
 
   document.querySelector('#phone-number').innerHTML = phoneNum
-  if (phoneNum.length >= 9) {
+  if (phoneNum.length >= maxPhoneNum) {
     document.querySelector('#check-icon').classList.add('green')
     document.querySelector('.cta').classList.remove('disabled')
   } else {
@@ -69,7 +70,7 @@ function numpadClick(val) {
 }
 
 async function ctaClick() {
-  if (phoneNum.length >= 9) {
+  if (phoneNum.length >= maxPhoneNum) {
     const formattedPhone = "60" + phoneNum
     try {
       document.querySelector('#error-msg').classList.remove('show')
